@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    questions:
+      title: Questions
+  admin:
+    questions:
+      actions:
+        create_new: CREATE NEW Question
+        reorder: REORDR Questions
+        reorder_done: DUN REORDERIN Questions
+      records:
+        title: Questions
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Questions YET. CLICK "CREATE NEW Question" 2 ADD UR FURST question.
+      question:
+        view_live_html: VIEW DIS question LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS question
+        delete: REMOOV DIS question FOREVR
+  questions:
+    show:
+      other: OTHR Questions

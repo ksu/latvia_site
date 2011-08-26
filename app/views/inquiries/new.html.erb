@@ -1,0 +1,38 @@
+<div class="wrapper">
+<% content_for :body_content_left do %>
+  <div class='inquiries'>
+    <%=raw @page[Page.default_parts.first.to_sym] %>
+
+    <%= form_for @inquiry do |f| %>
+      <%= render :partial => "/shared/admin/error_messages",
+                 :locals => {
+                   :object => @inquiry,
+                   :include_object_name => true
+                 } %>
+      <div class='field'>
+	      <label>Имя(обязательно)</label>
+        <%= f.text_field :name %>
+      </div>
+      <div class='field'>
+	      <label>Email(обязательно)</label>
+        <%= f.text_field :email %>
+      </div>
+      <div class='field'>
+	      <label>Телефон</label>
+        <%= f.text_field :phone %>
+      </div>
+      <div class='field message_field'>
+	      <label>Вопрос или сообщение</label>
+        <%= f.text_area :message, :rows => 8 %>
+      </div>
+      <div class='actions'>
+        <%= f.submit "Отправить" %>
+        <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
+      </div>
+      <div class="clear"></div>
+    <% end %>
+
+  </div>
+<% end %>
+<%= render :partial => "/shared/content_page" %>
+</div>

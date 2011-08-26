@@ -1,0 +1,116 @@
+body {
+	background: #ffffff;
+	font-family: Arial;
+	font-size: 10px;
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	color: #9a9a9a;
+}
+body h1{
+	
+}
+body h2{
+	
+}
+body h3, body h3 a{
+	font-size: 12px;
+	line-height: 22px;	
+}
+body p{
+	padding: 8px 0px 8px 0px;
+}
+body a{
+	color: #9a9a9a;
+	font-size: 10px;
+	text-decoration: none;
+}
+html {
+	height: 100%;
+}
+a,span,p,li {
+	font-size: 10px;	
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*font-size: 100%;*/
+  /*font: inherit;*/
+  vertical-align: baseline;
+}
+
+footer{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+} 
+
+/*___________________________________________________________________________________________________________________________________*/
+
+/*___Header___*/
+header{
+	padding: 47px 0px 40px 0px;
+}
+.header{
+	width: 1049px;
+	margin: 0px auto;
+}
+h1#logo{
+	display: inline;
+	font-size: 100%;
+	
+}
+
+h1#logo a{
+	width: 332px;
+	height: 60px; 
+		
+}
+.header_text{
+	width: 300px;
+	height: 40px;
+	padding: 20px 0px 0px 30px;
+	color: #9a9a9a;
+	font-weight: 400;
+	font-size: 16px;
+	
+}
+.menu{
+	padding: 15px 0px 0px 0px;
+}
+.menu li a{
+	color: #9a9a9a;
+	font-size: 10px;
+	text-decoration: none;
+	
+}
+/*___Content___*/
+.wrapper{
+	padding: 35px 0 60px 0;
+}
+.presentation_img{
+	float: left;
+	padding: 0px 20px 20px 0px;
+}
+.presentation_block{
+	height: 260px;
+}
+/*___Buttons___*/
+.button{
+    background:	#dddddd;
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px 25px 5px 25px;
+	line-height: 12px;
+	font-size: 12px;
+    height: auto;
+    width: auto;	
+}
