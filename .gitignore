@@ -1,11 +1,8 @@
 .bundle
-db/*.sqlite3
 log/*.log
 tmp/
 # Rails
 .bundle
-db/*.sqlite3
-db/*.sqlite3-journal
 *.log
 tmp
 tmp/**/*
@@ -17,12 +14,8 @@ doc/app
 .yardopts
 
 # Public Uploads
-public/system/*
-public/themes/*
 
 # Public Cache
-public/javascripts/cache
-public/stylesheets/cache
 
 # Vendor Cache
 vendor/cache
