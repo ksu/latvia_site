@@ -1,3 +1,4 @@
+
 <%
   if !!local_assigns[:apply_css] and (classes = menu_branch_css(local_assigns)).any?
     css = "class='#{classes.join(' ')}'".html_safe
@@ -14,6 +15,8 @@
                    :apply_css => local_assigns[:apply_css],
                    :hide_children => !!hide_children
                  } -%>
+    
     </ul>
   <% end -%>
+  
 </li>

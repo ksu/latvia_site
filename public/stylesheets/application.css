@@ -114,3 +114,6 @@ h1#logo a{
     height: auto;
     width: auto;	
 }
+.menu_button{
+	padding: 0px 0px 0px 10px;
+}
