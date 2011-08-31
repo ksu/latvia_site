@@ -16,11 +16,23 @@
 	float: left;
 	list-style: none;
 	padding: 11px 24px 0px 0px;
-	
+	position: relative;
 }
 .main_info_block ul li:last-child{
 	padding: 11px 0px 0px 0px;
 }
 .question_text{
 	padding: 35px 15px 0px 15px;
+}
+
+  .triangle_l1 {
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    border-width: 8px;
+    height: 0;
+    position: absolute;
+    width: 0;
+    left: 81px;
+    position: absolute;
+    bottom: 0px;
 }
