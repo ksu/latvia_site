@@ -17,21 +17,21 @@ body h2{
 }
 body h3, body h3 a{
 	font-size: 12px;
-	line-height: 22px;	
+
 }
 body p{
 	padding: 8px 0px 8px 0px;
 }
 body a{
 	color: #777777;
-	font-size: 10px;
+	font-size: 11px;
 	text-decoration: none;
 }
 html {
 	height: 100%;
 }
-a,span,p,li {
-	font-size: 10px;	
+a, span, p, li {
+	font-size: 11px;	
 }
 
 html, body, div, span, object, iframe,
@@ -110,7 +110,8 @@ a#logo{
 	width: 300px;
 	height: 40px;
 	padding: 20px 0px 0px 30px;
-	color: #a3a3a3;
+	/*color: #a3a3a3;*/
+	color: #3c86b8;
 	font-weight: 400;
 	font-size: 16px;
 	position: absolute;
@@ -131,6 +132,9 @@ a#logo{
 .wrapper{
 	padding: 35px 0 60px 0;
 }
+.wrapper p, .wrapper a{
+	font-size: 12px;
+}
 .text_img{
 	float: left;
 	padding: 20px 20px 20px 0;
@@ -145,7 +149,7 @@ a#logo{
 .info_menu {
 	background: #DDDDDD;
 	width: 100%;
-	height: 20px;
+	height: 30px;
 }
 .info_menu ul{
 	display: block;
@@ -154,7 +158,7 @@ a#logo{
 	margin: 0px auto;		
 }
 .info_menu ul li{
-	height: 20px;
+	height: 30px;
 	width: 190px;
 	float: left;
 	list-style: none;
@@ -168,34 +172,34 @@ a#logo{
 	padding: 0px 0px 0px 0px;
 }
 .info_menu ul li h3{
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: 20px;	
+	line-height: 30px;	
 }
 .info_menu ul li a{
-	height: 20px;
+	height: 30px;
 	text-align: center;
 }
 .info_menu ul li.m_hover a{
-	height: 20px;
+	height: 30px;
 	background: #c3c3c3;
-	background: -moz-linear-gradient(top, #DDDDDD, #c3c3c3);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#DDDDDD'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from(#DDDDDD), to(#c3c3c3)); /* for webkit browsers */
-	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A8FBE', endColorstr='#85ACC6'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#85ACC6), to(#4A8FBE)); /* for webkit browsers */
+	background: -moz-linear-gradient(center top , #85ACC6, #4A8FBE);	
 	display: block;	
-	color: #ffffff;
+	color: #ffffff!important;
 }
 /*___Buttons___*/
 .button{
-    background:	#dddddd;
+    background:	#85ACC6;
     border-radius: 5px;
 	-moz-border-radius: 5px;
 	padding: 5px 25px 5px 25px;
 	line-height: 12px;
 	font-size: 12px;
     height: auto;
-    width: auto;	
+    width: auto;
+    color: #ffffff;	
 }
 .menu_button{
 	padding: 0px 0px 0px 10px;
@@ -214,5 +218,5 @@ a#logo{
   bottom: -16px;
 }
 .m_hover .triangle_l2{
-	border-color: #c3c3c3 transparent transparent transparent;
+	border-color: #4A8FBE transparent transparent transparent;
 }
