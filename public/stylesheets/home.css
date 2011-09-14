@@ -51,6 +51,9 @@
     bottom: -18px;
     background: #c3c3c3;
     background: -moz-linear-gradient(top,  #c3c3c3,  #DDDDDD);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#c3c3c3'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c3), to(#DDDDDD)); /* for webkit browsers */
+
 	
 }
 .triangle_box{

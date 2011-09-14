@@ -8,9 +8,11 @@ body {
 	color: #777777;
 }
 body h1{
+	font-size: 16px;
 	
 }
 body h2{
+	font-size: 14px;
 	
 }
 body h3, body h3 a{
@@ -178,6 +180,9 @@ a#logo{
 	height: 20px;
 	background: #c3c3c3;
 	background: -moz-linear-gradient(top, #DDDDDD, #c3c3c3);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#DDDDDD'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#DDDDDD), to(#c3c3c3)); /* for webkit browsers */
+	
 	display: block;	
 	color: #ffffff;
 }
