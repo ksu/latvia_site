@@ -1,4 +1,5 @@
-<% content_for :body_content_left do %>
+
+<div class="wrapper">
   <ul id="questions">
     <% @questions.each do |question| %>
       <li>
@@ -6,6 +7,6 @@
       </li>
     <% end %>
   </ul>
-<% end %>
+</div>
 
 <%= render :partial => "/shared/content_page" %>

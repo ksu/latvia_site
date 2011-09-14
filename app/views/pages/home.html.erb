@@ -5,7 +5,7 @@
 		      <% if [4].include?(index) then %>
 		      <a href="/contact" class="js_part<%=index %>"> 
 			    <% else %> 			    
-				  <a href="<%= url_for question_path(question)%>" class="js_part<%=index %>"> 
+				  <a href="<%= url_for question_path(question)%>" class="js_part<%=index %> p_style"> 
 					<% end %>
 		      <%= image_fu question.image1, nil %>
 		      <div class="question_text">
@@ -18,32 +18,24 @@
 		      <% end %>
 	        </div>
 	        </a>
-	         <div class="triangle_l1 js_triangle<%=index %> js_triangle <% if [0].include?(index) then %>hover<% end %> " style="display: none;" ></div>
+	         <div class="js_triangle<%=index %> js_triangle <% if [0].include?(index) then %>hover<% end %> " style="display: none;" >
+		     <div class="triangle_l1">		     	
+		     </div>
+			<div class="block_l1">		     	
+		     </div>
+		       
+		</div>
 	      </li>
 	    <% end %>			  
-		</ul>		
-	</section>
-	
-<section class="wrapper">
-	<% @questions.each_with_index do |question, index| %>
-		<section class="content js_text<%=index %> js_text <% if [0].include?(index) then %>hover<% end %> presentation_block" style="display: none;" >	
-			<a href="<%= url_for question_path(question)%>"> 
-			<div class="presentation_img">
-			  <%= image_fu question.image2, nil %>
-			</div>
-			<%=raw question.text2 %>
-			</a>
-		</section>
-	<% end %>
-</section>	
-
+		</ul>
+				
+	</section>	
+<div class="triangle_box"></div>
 <script src="../javascripts/jquery.js"></script>
 <script src="../javascripts/mobilyslider.js"></script>
 <script>
 $(".js_part0").hover(
   function () {
-	  $(".js_text").removeClass("hover");
-    $(".js_text0").addClass("hover");
     $(".js_triangle").removeClass("hover");
     $(".js_triangle0").addClass("hover");
     
@@ -55,49 +47,32 @@ $(".js_part0").hover(
 
 $(".js_part1").hover(
   function () {	  
-    $(".js_text").removeClass("hover");
-    $(".js_text1").addClass("hover");
     $(".js_triangle").removeClass("hover");
     $(".js_triangle1").addClass("hover");
-  },
-  function () {
-
   }
+
 );
 
 $(".js_part2").hover(
   function () {
-	   $(".js_text").removeClass("hover");
-     $(".js_text2").addClass("hover");
      $(".js_triangle").removeClass("hover");
      $(".js_triangle2").addClass("hover");
-  },
-  function () {
-
   }
+
 );
 
 $(".js_part3").hover(
   function () {
-	   $(".js_text").removeClass("hover");
-     $(".js_text3").addClass("hover");
      $(".js_triangle").removeClass("hover");
      $(".js_triangle3").addClass("hover");
-  },
-  function () {
-
   }
+
 );
 
 $(".js_part4").hover(
   function () {
-	   $(".js_text").removeClass("hover");
-     $(".js_text4").addClass("hover");
     $(".js_triangle").removeClass("hover");
     $(".js_triangle4").addClass("hover");
-  },
-  function () {
-
   }
 );
 </script>

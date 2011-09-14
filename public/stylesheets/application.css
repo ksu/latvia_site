@@ -5,7 +5,7 @@ body {
 	position: relative;
 	min-height: 100%;
 	margin: 0;
-	color: #9a9a9a;
+	color: #777777;
 }
 body h1{
 	
@@ -21,7 +21,7 @@ body p{
 	padding: 8px 0px 8px 0px;
 }
 body a{
-	color: #9a9a9a;
+	color: #777777;
 	font-size: 10px;
 	text-decoration: none;
 }
@@ -57,37 +57,70 @@ footer{
 
 /*___Header___*/
 header{
-	padding: 47px 0px 40px 0px;
+	padding: 47px 0px 40px 0px;	
 }
 .header{
 	width: 1049px;
 	margin: 0px auto;
+	position: relative;
+	height: 60px;
 }
-h1#logo{
-	display: inline;
-	font-size: 100%;
-	
-}
+.first a
+{
+	height: 16px;
+	width: 26px;
+	display: block;
+	background-image: url("/images/home.png");
+	background-position: right;
+	background-repeat: no-repeat;
 
-h1#logo a{
+}
+.last a
+{
+	height: 16px;
+	width: 26px;
+	display: block;
+	background-image: url("/images/about.png");
+	background-position: right;
+	background-repeat: no-repeat;
+
+}
+.contactl a
+{
+	height: 16px;
+	width: 26px;
+	display: block;
+	background-image: url("/images/contactl.png");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+a#logo{
 	width: 332px;
 	height: 60px; 
-		
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-weight: 400;
+	font-size: 60px;
+	color: #9a9a9a;	
 }
 .header_text{
 	width: 300px;
 	height: 40px;
 	padding: 20px 0px 0px 30px;
-	color: #9a9a9a;
+	color: #a3a3a3;
 	font-weight: 400;
 	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 280px;
 	
 }
 .menu{
 	padding: 15px 0px 0px 0px;
 }
 .menu li a{
-	color: #9a9a9a;
+	color: #777777;
 	font-size: 10px;
 	text-decoration: none;
 	
@@ -96,12 +129,57 @@ h1#logo a{
 .wrapper{
 	padding: 35px 0 60px 0;
 }
+.text_img{
+	float: left;
+	padding: 20px 20px 20px 0;
+}
 .presentation_img{
 	float: left;
 	padding: 0px 20px 20px 0px;
 }
 .presentation_block{
 	height: 260px;
+}
+.info_menu {
+	background: #DDDDDD;
+	width: 100%;
+	height: 20px;
+}
+.info_menu ul{
+	display: block;
+	height: auto;
+	width: 1049px;
+	margin: 0px auto;		
+}
+.info_menu ul li{
+	height: 20px;
+	width: 190px;
+	float: left;
+	list-style: none;
+	padding: 0px 24px 0px 0px;
+	position: relative;
+}
+.info_menu ul li:hover {
+	color: #e77777;	
+}
+.info_menu ul li:last-child{
+	padding: 0px 0px 0px 0px;
+}
+.info_menu ul li h3{
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 20px;	
+}
+.info_menu ul li a{
+	height: 20px;
+	text-align: center;
+}
+.info_menu ul li.m_hover a{
+	height: 20px;
+	background: #c3c3c3;
+	background: -moz-linear-gradient(top, #DDDDDD, #c3c3c3);
+	display: block;	
+	color: #ffffff;
 }
 /*___Buttons___*/
 .button{
@@ -118,3 +196,18 @@ h1#logo a{
 	padding: 0px 0px 0px 10px;
 }
 
+/*___menu____*/
+.triangle_l2 {
+  border-color: #dddddd transparent transparent transparent;
+  border-style: solid;
+  border-width: 8px;
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 90px;
+  position: absolute;
+  bottom: -16px;
+}
+.m_hover .triangle_l2{
+	border-color: #c3c3c3 transparent transparent transparent;
+}
