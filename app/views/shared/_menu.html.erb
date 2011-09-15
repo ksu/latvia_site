@@ -9,9 +9,9 @@
 <nav id='<%= dom_id %>' class='<%= css %>'>
   <ul>
 
-    <li class="first"> <%= link_to "", "/" , :class=> "menu_button"%></li>
-    <li class="last"> <%= link_to "", "/about" , :class=> "menu_button"%></li>
-    <li class="contactl"> <%= link_to "", "/contact" , :class=> "menu_button "%></li> 
+    <li class="first"> <%= link_to "", "/" , :class=> "menu_button", :title=>"Главная" %></li>
+    <li class="last"> <%= link_to "", "/about" , :class=> "menu_button", :title=>"О компании"%></li>
+    <li class="contactl"> <%= link_to "", "/contact" , :class=> "menu_button", :title=>"Контакты"%></li> 
   </ul>
 </nav>
 <% end -%>

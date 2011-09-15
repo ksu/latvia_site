@@ -1,4 +1,25 @@
-<section class="wrapper">
+<title>fff</title>
+<section class="info_menu">
+	<ul id="questions">
+	    <% @questions.each_with_index do |question, index| %>
+	      <li class="">
+		      <% if [4].include?(index) then %>
+		      <a href="/contact" class="js_part<%=index %>" > 
+			    <% else %> 			    
+				  <a href="<%= url_for question_path(question)%>" class="js_part<%=index %> p_style "> 
+					<% end %>
+		      <div class="question_text">
+	        <h3><%=raw question.title %></h3>
+	        <% if [4].include?(index) then %>
+		      <% end %>
+	        </div>
+	        </a>
+	         <div class="triangle_l2 js_triangle<%=index %> js_triangle" style="display: none;" ></div>
+	      </li>
+	    <% end %>			  
+		</ul>		
+	</section>
+<section class="wrapper">	
 <section id='body_content'>
   <%=raw @page[:body] %>
 </section>
@@ -6,3 +27,48 @@
   <%=raw @page[:side_body] %>
 </section>
 </section>
+<script src="../javascripts/jquery.js"></script>
+<script src="../javascripts/mobilyslider.js"></script>
+<script>
+$(".js_part0").hover(
+  function () {
+    $(".js_triangle").removeClass("hover");
+    $(".js_triangle0").addClass("hover");
+    
+  },
+  function () {
+
+  }
+);
+
+$(".js_part1").hover(
+  function () {	  
+    $(".js_triangle").removeClass("hover");
+    $(".js_triangle1").addClass("hover");
+  }
+
+);
+
+$(".js_part2").hover(
+  function () {
+     $(".js_triangle").removeClass("hover");
+     $(".js_triangle2").addClass("hover");
+  }
+
+);
+
+$(".js_part3").hover(
+  function () {
+     $(".js_triangle").removeClass("hover");
+     $(".js_triangle3").addClass("hover");
+  }
+
+);
+
+$(".js_part4").hover(
+  function () {
+    $(".js_triangle").removeClass("hover");
+    $(".js_triangle4").addClass("hover");
+  }
+);
+</script>

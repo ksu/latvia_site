@@ -11,6 +11,7 @@ header{
 }
 #page{
 	width: 100%;
+	min-height: 580px;
 }
 #body_content_left {
   float: left;
@@ -51,6 +52,7 @@ header{
 .inquiries form label {
   width: 150px;
   float: left;
+  font-size: 12px;
 }
 .inquiries form input {
   width: 60%;

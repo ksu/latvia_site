@@ -57,16 +57,23 @@ color: #6a6969;
     bottom: -18px;
     background: #4A8FBE;
    /* background: -moz-linear-gradient(top,  #c3c3c3,  #DDDDDD);*/
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85ACC6', endColorstr='#4A8FBE'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from(#4A8FBE), to(#85ACC6)); /* for webkit browsers */
-	background: -moz-linear-gradient(center top , #4A8FBE, #85ACC6)
+	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85ACC6', endColorstr='#4A8FBE'); */
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#4A8FBE), to(#85ACC6));  */
+	/*background: -moz-linear-gradient(center top , #4A8FBE, #85ACC6)*/
 
 	
 }
 .triangle_box{
 	height: 18px;
 	background: #DDDDDD;
-    
-	
+}
 
+.block_l2{
+	height: 148px;
+    position: absolute;
+    width: 175px;
+    left: 12px;
+    bottom: -166px;
+	background: url(/images/block_bg.png) repeat-x;
+	
 }

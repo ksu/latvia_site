@@ -8,12 +8,16 @@ body {
 	color: #777777;
 }
 body h1{
-	font-size: 16px;
+	font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6A6969;
 	
 }
 body h2{
-	font-size: 14px;
-	
+	font-size: 18px;
+	font-weight: 400;
+	color: #6A6969;
 }
 body h3, body h3 a{
 	font-size: 12px;
@@ -53,7 +57,21 @@ footer{
 	left: 0;
 	text-align: center;
 	width: 100%;
+	height: 35px;
+	padding: 5px 0px 0px 0px;
+	background: #f0efef;
+	color: #1a5c89;
+
+	
+}
+footer p{
+	font-size: 10px!important;
 } 
+.footer{
+	width: 1049px;
+	margin: 0px auto;
+	text-align: center;
+}
 
 /*___________________________________________________________________________________________________________________________________*/
 
@@ -80,7 +98,7 @@ header{
 .last a
 {
 	height: 16px;
-	width: 26px;
+	width: 18px;
 	display: block;
 	background-image: url("/images/about.png");
 	background-position: right;
@@ -190,7 +208,7 @@ a#logo{
 	color: #ffffff!important;
 }
 /*___Buttons___*/
-.button{
+.button, .inquiries form .actions input{
     background:	#85ACC6;
     border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -200,6 +218,7 @@ a#logo{
     height: auto;
     width: auto;
     color: #ffffff;	
+    cursor: pointer;
 }
 .menu_button{
 	padding: 0px 0px 0px 10px;
