@@ -7,6 +7,7 @@ font-size: 14px;
 line-height: 22px;
 font-weight: 400;
 color: #6a6969;
+padding-bottom: 8px;
 }
 .main_info_block ul{
 	display: block;
@@ -32,7 +33,7 @@ color: #6a6969;
 	padding: 11px 0px 0px 0px;
 }
 .question_text{
-	padding: 35px 5px 0px 15px;
+	padding: 24px 5px 0px 15px;
 }
 .p_style p{
 	padding: 3px 0px 3px 10px!important;

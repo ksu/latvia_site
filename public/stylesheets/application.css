@@ -220,6 +220,10 @@ a#logo{
     color: #ffffff;	
     cursor: pointer;
 }
+.button:hover, .inquiries form .actions input:hover{
+	background:	#4A8FBE;
+	
+}
 .menu_button{
 	padding: 0px 0px 0px 10px;
 }
