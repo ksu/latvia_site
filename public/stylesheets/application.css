@@ -64,8 +64,9 @@ footer{
 
 	
 }
-footer p{
+footer p, footer a{
 	font-size: 10px!important;
+	color: #1a5c89;
 } 
 .footer{
 	width: 1049px;
